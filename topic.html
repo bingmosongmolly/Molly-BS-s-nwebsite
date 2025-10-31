@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Topic — Learning Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">My Website</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic.html" class="active">My Topic</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Why I’m Exploring Learning Analytics</h2>
+      <img class="hero-img" src="https://picsum.photos/1200/501" alt="Notebook and laptop representing analytics" />
+      <p>
+        I’m fascinated by learning analytics—the practice of using data to improve how we
+        study and teach. Good analytics doesn’t replace human judgment; it augments it.
+        Simple dashboards can reveal whether a study plan is balanced, where time is being
+        wasted, and which topics deserve extra attention. I’m starting with lightweight
+        tools such as spreadsheets and small JavaScript snippets to track goals, outcomes,
+        and reflection notes. The goal isn’t to collect every metric; it’s to capture a few
+        signals that lead to better decisions week after week.
+      </p>
+      <p>
+        My approach emphasizes transparency and iteration. I regularly review what I
+        planned versus what actually happened, write a short summary of what worked, and
+        choose one change to test next. Over time, these small adjustments accumulate into
+        real progress. I also care about clear visuals: clean typography, generous spacing,
+        and minimal color accents make information easier to scan. This site is my sandbox
+        for those ideas, and I’ll continue to expand it with examples, notes, and bite-sized
+        experiments anyone can try.
+      </p>
+
+      <h3>What I’m Tracking</h3>
+      <ul>
+        <li>Study sessions completed vs. planned each week</li>
+        <li>Topics that caused confusion and how I resolved them</li>
+        <li>One small weekly experiment and its outcome</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> My Website</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

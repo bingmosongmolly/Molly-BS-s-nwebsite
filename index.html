@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">My Website</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="topic.html">My Topic</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h1>Welcome to My Website</h1>
+      <img class="hero-img" src="https://picsum.photos/1200/500" alt="A banner image related to my interests" />
+      <p>
+        Hello and welcome! This site is a small personal space where I share who I am and
+        what I’m currently learning. Building this website helps me practice the
+        fundamentals—HTML for structure, CSS for style, and habits that make tiny projects
+        feel professional: clear navigation, readable typography, and thoughtful layout.
+        On the second page, I go deeper into a topic I enjoy and explain why it matters,
+        how I approach learning it, and what I plan to experiment with next.
+      </p>
+      <p>
+        Outside of coding, I like tools that make ideas easier to see: charts, diagrams,
+        and tidy documents. Over time I’ll add short posts, class notes, and mini projects
+        that document what I tried. My goal isn’t perfection; it’s steady progress and
+        sharing enough detail that someone else can follow along. Thanks for visiting, and
+        feel free to reach out with feedback—I’m always happy to learn from others.
+      </p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Want to connect? Use any of the links below.</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">linkedin.com/in/your-handle</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> My Website</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
